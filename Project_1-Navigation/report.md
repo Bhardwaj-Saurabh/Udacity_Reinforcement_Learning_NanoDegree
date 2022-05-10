@@ -39,23 +39,24 @@ I have implemented the DQN as folloings.
 
 Q-network architecture:
 
-Input layer FC1: 37 nodes in, 64 nodes out
-Hidden layer FC2: 64 nodes in, 64 nodes out
-Hidden layer FC3: 64 nodes in, 64 nodes out
-Output layer: 64 nodes in, 4 out — action size
+-Input layer FC1: 37 nodes in, 64 nodes out
+-Hidden layer FC2: 64 nodes in, 64 nodes out
+-Hidden layer FC3: 64 nodes in, 64 nodes out
+-Output layer: 64 nodes in, 4 out — action size
 
 ### Hyperparameters
 There were many hyperparameters involved in the experiment. The value of each of them is given below:
 
-BUFFER_SIZE = int(1e5) # replay buffer size
-BATCH_SIZE = 64 # mini batch size
-GAMMA = 0.99 # discount factor
-TAU = 1e-3 # for soft update of target parameters
-LR = 5e-4 # learning rate
-UPDATE_EVERY = 4 # how often to update the network
-Epsilon start = 1.0
-Epsilon start = 0.01
-Epsilon decay = 0.995
+-BUFFER_SIZE = int(1e5) # replay buffer size
+-BATCH_SIZE = 64 # mini batch size
+-GAMMA = 0.99 # discount factor
+-TAU = 1e-3 # for soft update of target parameters
+-LR = 5e-4 # learning rate
+-UPDATE_EVERY = 4 # how often to update the network
+-Epsilon start = 1.0
+-Epsilon start = 0.01
+-Epsilon decay = 0.995
+- Activation = relu (on first and second layer)
 
 ## Plot of Rewards
 This graph shows the rewards per episode within the training phase, as well as the moving mean.  

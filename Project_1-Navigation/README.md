@@ -1,7 +1,7 @@
 [//]: # (Image References)
 
-[random_gif]: /Results/random_agent.gif
-[DQN_result]: /Results/Navigation.JPEG
+[random_gif]: https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/Project_1-Navigation/results/random_agent.gif
+[DQN_result]: https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/Project_1-Navigation/results/Navigation.jpg
 
 # Project 1: Navigation
 
@@ -83,7 +83,7 @@ Plot showing the score per episode over all the episodes. The environment was so
 
 | Double DQN |
 
-[dqn-scores] ()
+[dqn-scores] [DQN_result]
 
 
 ### Extra Challenge: Learning from Pixels

@@ -1,7 +1,7 @@
 [//]: # (Image References)
 
-[random_gif]: https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/Project_1-Navigation/results/random_agent.gif
-[DQN_result]: https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/Project_1-Navigation/results/Navigation.jpg
+[random_gif]: https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/Project_1-Navigation/results/random_agent.gif "random_agent"
+[DQN_result]: https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/Project_1-Navigation/results/Navigation.jpg "DQN_result"
 
 # Project 1: Navigation
 
@@ -12,7 +12,7 @@ In the navigation project, I train an agent to navigate and collect bananas in a
 
 Random agent             
 :-------------------------:
-[Random Agent][random_gif] 
+[random_agent][random_gif] 
 
 
 Reward for collecting a yellow banana: +1
@@ -83,7 +83,7 @@ Plot showing the score per episode over all the episodes. The environment was so
 
 | Double DQN |
 
-[dqn-scores] [DQN_result]
+[DQN_result] [DQN_result]
 
 
 ### Extra Challenge: Learning from Pixels

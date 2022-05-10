@@ -1,7 +1,7 @@
 [//]: # (Image References)
 
-[random_gif]: https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/Project_1-Navigation/results/random_agent.gif "random_agent"
-[DQN_result]: https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/Project_1-Navigation/results/Navigation.jpg "DQN_result"
+[random_gif]: https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/Project_1-Navigation/results/random_agent.gif "random agent"
+[DQN_result]: https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/Project_1-Navigation/results/Navigation.jpg "DQN result"
 
 # Project 1: Navigation
 
@@ -12,7 +12,7 @@ In the navigation project, I train an agent to navigate and collect bananas in a
 
 Random agent             
 :-------------------------:
-[random_agent][random_gif] 
+![random agent][random_gif] 
 
 
 Reward for collecting a yellow banana: +1
@@ -81,9 +81,9 @@ Several enhancements to the original DQN algorithm have also been discussed in t
 
 Plot showing the score per episode over all the episodes. The environment was solved in **340** episodes with average score of 13.
 
-| Double DQN |
+| DQN |
 
-[DQN_result] [DQN_result]
+![DQN result][DQN_result]
 
 
 ### Extra Challenge: Learning from Pixels

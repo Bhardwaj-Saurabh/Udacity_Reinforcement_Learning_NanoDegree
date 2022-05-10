@@ -49,7 +49,7 @@ The task is defined as an episodic task.
 2. Place the file in this folder, unzip (or decompress) the file and then write the correct path in the argument for creating the environment under the notebook `Navigation_solution.ipynb`:
 
 ```python
-env = env = UnityEnvironment(file_name="Banana.app")
+env = UnityEnvironment(file_name="Banana.app")
 ```
 
 ### Description

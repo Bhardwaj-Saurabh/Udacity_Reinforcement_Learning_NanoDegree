@@ -1,7 +1,7 @@
 [//]: # (Image References)
 
 [random_gif]: https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/Project_1-Navigation/results/random_agent.gif "random agent"
-[DQN_result]: https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/Project_1-Navigation/results/Navigation.jpg "DQN result"
+[DQN_result]: https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/Project_1-Navigation/results/Navigation_update.jpg "DQN result"
 
 # Project 1: Navigation
 

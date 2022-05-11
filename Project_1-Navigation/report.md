@@ -62,12 +62,12 @@ There were many hyperparameters involved in the experiment. The value of each of
 This graph shows the rewards per episode within the training phase, as well as the moving mean.  
 It illustrates that the Agent is able to receive an average reward of at least +13 over 100 episodes.  
 
-In this case, the Agent solved the environment after **21 episodes**.
+In this case, the Agent solved the environment after **470 episodes**.
 
-![](https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/Project_1-Navigation/results/Navigation.jpg)
+![](https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/Project_1-Navigation/results/Navigation_update.jpg)
 
 ## Conclusion
-The environment was solved in 340 episodes with average score of 13. Indeed, there are improvement which can be made from here. Below are some ideas to improveme the results.
+The environment was solved in 470 episodes with average score of 13. Indeed, there are improvement which can be made from here. Below are some ideas to improveme the results.
  
 ## Ideas for Future Work
 

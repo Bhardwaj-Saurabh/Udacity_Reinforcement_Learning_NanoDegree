@@ -1,46 +1,94 @@
-Project 1: Navigation
-Introduction
-For this project, you will train an agent to navigate (and collect bananas!) in a large, square world.
+# Project 2 - Continuous Control with DDPG agent
+This folder contains the solution to project 2 on continous control for the Udacity Nanodegree.
 
-Trained Agent
+In this project a double-jointed arm is trained to reach target locations. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of the agent is to maintain its position at the target location for as many time steps as possible.
 
-A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana. Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.
+The implementation details can be found in [**REPORT.md**](REPORT.md).
 
-The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction. Given this information, the agent has to learn how to best select actions. Four discrete actions are available, corresponding to:
+![training_results](images/reacher_environment.gif)
 
-0 - move forward.
-1 - move backward.
-2 - turn left.
-3 - turn right.
-The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
 
-Getting Started
-Download the environment from one of the links below. You need only select the environment that matches your operating system:
+## Project Details
 
-Linux: click here
-Mac OSX: click here
-Windows (32-bit): click here
-Windows (64-bit): click here
-(For Windows users) Check out this link if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
+### Environment Details
+The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. 
 
-(For AWS) If you'd like to train the agent on AWS (and have not enabled a virtual screen), then please use this link to obtain the environment.
+Each action is a vector with four numbers, corresponding to **torque applicable to two joints**. Every entry in the action vector should be **a number between -1 and 1**.
 
-Place the file in the course GitHub repository, in the p1_navigation/ folder, and unzip (or decompress) the file.
+For this project, two separate versions of the *Reacher* Unity environment are provided:
+* Version 1: The first version contains a single agent
+* Version 2: The second version contains 20 identical agents, each with its own copy of the environment  
 
-Instructions
-Follow the instructions in Navigation.ipynb to get started with training your own agent!
+The task is episodic, and the environment is considered solved when the agent gets an average score of +30 over 100 consecutive episodes.
 
-(Optional) Challenge: Learning from Pixels
-After you have successfully completed the project, if you're looking for an additional challenge, you have come to the right place! In the project, your agent learned from information such as its velocity, along with ray-based perception of objects around its forward direction. A more challenging task would be to learn directly from pixels!
+## Getting Started
+### Installation
 
-To solve this harder task, you'll need to download a new Unity environment. This environment is almost identical to the project environment, where the only difference is that the state is an 84 x 84 RGB image, corresponding to the agent's first-person view. (Note: Udacity students should not submit a project with this new environment.)
+Installing PyTorch
+* PyTorch 0.4.x install from https://pytorch.org or https://pytorch.org/get-started/previous-versions/
 
-You need only select the environment that matches your operating system:
+It is recommended to install other dependencies through **Anconda**: https://anaconda.org/
+* Python 3.6
+* pickle
+* numpy
+* tensorboardx: tensorboardX is used for saving data to visualise the training process from PyTorch to tensorboard 
 
-Linux: click here
-Mac OSX: click here
-Windows (32-bit): click here
-Windows (64-bit): click here
-Then, place the file in the p1_navigation/ folder in the course GitHub repository, and unzip (or decompress) the file. Next, open Navigation_Pixels.ipynb and follow the instructions to learn how to use the Python API to control the agent.
+To create an Anaconda virtual environment for Python it is recommended to follow the guildelines at the Anaconda website. In general you would want to do the following in the terminal:
 
-(For AWS) If you'd like to train the agent on AWS, you must follow the instructions to set up X Server, and then download the environment for the Linux operating system above.
+**Linux and Mac:**
+
+    conda create --name drlnd python=3.6
+    source activate drlnd
+
+**Windows**
+
+    conda create --name drlnd python=3.6
+    activate drlnd
+
+The unity environment needed for this assignment can be found in the folder **/unity-ml-agents/**. Here you will find environments for Mac, Linux, and Windows.
+
+### Running the code
+
+**Training the agent**
+
+Before training the agent, hyper-parameters can be set in **ddpg_agent.py**. If you want to change the neural networks for the actor and critic, do so in **ddpg_model.py**. 
+
+To start training the agent run the following command:
+
+    $ python train_ddpg_agent.py
+
+tensorboard can be used to visualise the training process (mean reward) in your browser. Start tensprboard by running the following command:
+
+    $ tensorboard --logdir runs
+
+*"runs"* is a folder created by tensorboardX in the root folder. It contains the events defined in *train_ddpg_agent.py*.
+
+When training is done, the best model weights are saved as **checkpoint_actor.pth** and **checkpoint_critic.pth**.
+
+## Results
+<!--
+**FIX VIDEO**
+Video: [YouTube.com](https://youtu.be/laOg6DYBc6c)
+-->
+
+Below are the training results from Version 1 and 2 of the environment. First, Version 2 was solved. Afterwards Version 1 was trained with identical network architecture and hyper-parameters as Version 2.
+
+Detailed results are found in [**REPORT.md**](REPORT.md).
+
+### Version 2: 20 agents
+![training_results](images/training_results_20_agents.jpg)
+
+<!-- <img src="images/training_results.jpg" alt="Training Results" width="300"> -->
+
+
+### Version 1: 1 agent
+![training_results](images/training_results_1_agent_vs_20_agents.jpg)
+
+## Acknowledgement
+The initial code is derived from the DDPG example from the Udacity github repository, and then built upon and tuned for the given case.
+
+## License
+GPL-3.0
+
+## Author
+Simon Bøgh

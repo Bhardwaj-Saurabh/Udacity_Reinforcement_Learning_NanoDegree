@@ -93,8 +93,6 @@ tensorboard can be used to visualise the training process (mean reward) in your 
 
     $ tensorboard --logdir runs
 
-*"runs"* is a folder created by tensorboardX in the root folder. It contains the events defined in *train_ddpg_agent.py*.
-
 When training is done, the best model weights are saved as **checkpoint_actor.pth** and **checkpoint_critic.pth**.
 
 ## Results

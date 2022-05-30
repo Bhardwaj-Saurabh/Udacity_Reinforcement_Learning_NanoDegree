@@ -43,9 +43,11 @@ The agents solved the environment in  **1151** episodes by collective average re
 
 ### Reward vs. Episode
 
+Environment solved in 1190 episodes... Average Score: 0.50 over last 100 episodes.
+
 The below graphs shows the rewards vs Episode after training is completed.
 
-![results](https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/Project_3-Collaboration%20and%20Competition/images/final_result.png)
+![results](https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/Project_3-Collaboration%20and%20Competition/images/download.png)
 
 ## Improvements
 - Using prioritized experience replay which can certainly improved the performance in many cases.

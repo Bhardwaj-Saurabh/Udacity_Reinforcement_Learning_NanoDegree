@@ -66,10 +66,6 @@ To create an Anaconda virtual environment for Python it is recommended to follow
     $ conda create --name drlnd python=3.6
     $ activate drlnd
 
-The unity environment needed for this assignment can be found in the folder **/unity-ml-agents/**. Here you will find environments for Mac, Linux, and Windows.
-
-The unity environment needed for this assignment can be found in the folder **/unity-ml-agents/**. Here you will find environments for Mac, Linux, and Windows.
-
 **Unity Environments**
 1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux.zip)

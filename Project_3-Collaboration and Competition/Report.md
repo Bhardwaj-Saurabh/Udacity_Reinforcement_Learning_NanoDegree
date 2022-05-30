@@ -49,6 +49,6 @@ The below graphs shows the rewards vs Episode after training is completed.
 
 ## Improvements
 - Using prioritized experience replay which can certainly improved the performance in many cases.
-- Other algorithms such as PPO also can perform better perticulary in continious action spaces.
+- Other algorithms such as TRPO and PPO also can perform better perticulary in continious action spaces.
 - Optimize hyperparameters: particularly the actor and critic learning rates
 - To reduce the noise, try to limit updated each timesteps which can help to make the training faster as well.

@@ -95,11 +95,11 @@ When training is done, the best model weights are saved as **checkpoint_actor.pt
 
 ## Results
 
-Environment solved in 1151 episodes... Average Score: 0.50.
+Environment solved in 1190 episodes... Average Score: 0.50.
 
 Below are the final results after solving the enviornment. 
 
-![**Final Result**](https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/Project_3-Collaboration%20and%20Competition/images/final_result.png)
+![**Final Result**](https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/Project_3-Collaboration%20and%20Competition/images/download.png)
 
 Detailed results are found in [**Report.md**](Report.md).
 

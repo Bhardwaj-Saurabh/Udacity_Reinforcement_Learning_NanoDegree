@@ -1,14 +1,14 @@
 # Udacity_Reinforcement_Learning_NanoDegree
 
-![Trained Agents](https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/images/rl_gif.gif)
-
-This repository contains material related to Udacity's [Deep Reinforcement Learning Nanodegree](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893) program.  
-
 ## Certificate of Completion
 
 ![Certificate](https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/images/DRL.png)
 
 ## Table of Contents
+
+![Trained Agents](https://github.com/Bhardwaj-Saurabh/Udacity_Reinforcement_Learning_NanoDegree/blob/main/images/rl_gif.gif)
+
+This repository contains material related to Udacity's [Deep Reinforcement Learning Nanodegree](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893) program.  
 
 ### Labs / Projects
 
